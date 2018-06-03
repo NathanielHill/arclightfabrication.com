@@ -1,0 +1,26 @@
+-> Display pretty [loading...] content
+
+-> Check captcha/isVerified security
+  -> Now make a captcha microservice
+
+-> Find site for color palette
+
+-> Fix Gallery width
+
+-> Quote Page becomes "Materials"
+  -> Four container w a photo and paragraph
+
+-> About - side by side on desktop
+  -> About chris/about company - logo circle
+  -> Mobile page has shorter text
+
+-> On mobile put email/instagram at bottom
+
+-> On desktop nav buttons bigger/spread out/logo bigger
+
+-> Desktop logo hangsover nav bar?
+
+-> Chris's Phone:
+
+  320 X 418 Portrait
+  568 X 320 Landscape

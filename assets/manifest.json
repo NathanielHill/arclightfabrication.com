@@ -1,0 +1,45 @@
+{
+  "short_name": "Arclight",
+  "name": "Arclight Fabrication",
+  "background_color": "#FF5722",
+  "theme_color": "#4D77B3",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/static/launcher-icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/static/launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "images/touch/icon-128x128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "images/touch/ms-touch-icon-144x144-precomposed.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "images/touch/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "images/touch/chrome-touch-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/touch/chrome-touch-icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html?utm=homescreen"
+}
