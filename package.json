@@ -14,7 +14,7 @@
     "export": "next export",
     "analyze": "cross-env ANALYZE=1 next build",
     "deploy": "next build && next export && cp assets/* out/ && now out/ -n arclightfabrication && now alias",
-    "precommit": "lint-staged && yarn test"
+    "precommit": "lint-staged"
   },
   "now": {
     "alias": "staging.arclightfabrication.com",
@@ -67,7 +67,13 @@
     ]
   },
   "lint-staged": {
-    "*.js": "standard"
+    "*.js": [
+      "standard",
+      "jest --bail --findRelatedTests"
+    ]
+  },
+  "jest": {
+    "collectCoverage": true
   },
   "keywords": [],
   "author": "Nathaniel Hill <nata@goguna.com>",
@@ -110,6 +116,7 @@
     "jest": "^23.1.0",
     "lint-staged": "^7.1.3",
     "now": "^11.2.1",
+    "nyc": "^12.0.2",
     "react-test-renderer": "^16.4.0",
     "regenerator-runtime": "^0.11.1",
     "standard": "^11.0.1",

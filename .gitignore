@@ -3,3 +3,7 @@ node_modules
 *.log
 out/
 ignore/
+
+# coverage
+.nyc_output
+coverage
