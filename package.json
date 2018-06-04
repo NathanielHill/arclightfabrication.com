@@ -7,6 +7,7 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
+    "coveralls": "nyc --instrument=false --source-map=false report --temp-directory=./coverage --reporter=text-lcov | coveralls",
     "dev": "node --inspect server.js",
     "build": "next build",
     "start": "cross-env NODE_ENV=production node server.js",
@@ -104,6 +105,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^8.2.3",
     "babel-jest": "^23.0.1",
+    "coveralls": "^3.0.1",
     "husky": "^0.14.3",
     "jest": "^23.1.0",
     "lint-staged": "^7.1.3",
