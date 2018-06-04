@@ -17,6 +17,7 @@
     "precommit": "lint-staged"
   },
   "now": {
+    "name": "arclightfabrication",
     "alias": "staging.arclightfabrication.com",
     "env": {
       "ANALYTICS_TOKEN": "UA-119962353-1",
