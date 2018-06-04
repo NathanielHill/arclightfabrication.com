@@ -9,7 +9,7 @@
     "test": "jest",
     "dev": "node --inspect server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
+    "start": "cross-env NODE_ENV=production node server.js",
     "export": "next export",
     "analyze": "cross-env ANALYZE=1 next build",
     "deploy": "next build && next export && cp assets/* out/ && now out/ -n arclightfabrication && now alias",
