@@ -13,7 +13,7 @@
     "export": "next export",
     "analyze": "cross-env ANALYZE=1 next build",
     "deploy": "next build && next export && cp assets/* out/ && now out/ -n arclightfabrication && now alias",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged && yarn test"
   },
   "now": {
     "alias": "staging.arclightfabrication.com",
