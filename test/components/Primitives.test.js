@@ -1,6 +1,6 @@
 /* global test, expect */
 
-import { Link } from './Primitives'
+import { Link } from './../../components/Primitives'
 import React from 'react'
 import renderer from 'react-test-renderer'
 
