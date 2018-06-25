@@ -1,4 +1,4 @@
-language: "node_js"
+language: node_js
 node_js:
   - "8"
 cache:
@@ -13,4 +13,4 @@ deploy:
     on:
       master: true
 
-after_script: ["yarn coveralls"]
+after_script: yarn coveralls
