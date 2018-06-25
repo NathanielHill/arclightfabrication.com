@@ -1,6 +1,7 @@
+import styled, { keyframes } from 'styled-components'
 import Router from 'next/router'
 import ReactModal from 'react-modal'
-import styled, { keyframes } from 'styled-components'
+import React from 'react'
 import { InstagramCarousel } from './../lib/components'
 
 const drawCircle = keyframes`
@@ -50,7 +51,7 @@ const InstagramModal = styled(({ className, modalClassName, ...props }) => (
             right: 0;
             bottom: 0;
         }
-        
+
         .BoxedViewModal {
             background-color: transparent;
             height: 25rem;
@@ -61,7 +62,7 @@ const InstagramModal = styled(({ className, modalClassName, ...props }) => (
             width: 25rem;
             }
         }
-        
+
         .slick-dots,
         .slick-next,
         .slick-prev {

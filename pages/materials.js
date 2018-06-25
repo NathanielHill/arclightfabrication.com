@@ -1,6 +1,6 @@
 import gql from 'graphql-tag'
-import { Container, H1, Layout } from './../lib/components'
-import pageWrapper from './../lib/pageWrapper'
+import { Container, H1, Layout } from './../src/lib/components'
+import pageWrapper from './../src/lib/pageWrapper'
 
 export default pageWrapper(gql`
   query allMaterials {

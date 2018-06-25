@@ -1,6 +1,6 @@
 import gql from 'graphql-tag'
-import { Layout, P, ProjectList, Tab, TabList, TabPanel, Tabs } from './../lib/components'
-import pageWrapper from './../lib/pageWrapper'
+import { Layout, P, ProjectList, Tab, TabList, TabPanel, Tabs } from './../src/lib/components'
+import pageWrapper from './../src/lib/pageWrapper'
 
 export default pageWrapper(gql`
   query allCategories {

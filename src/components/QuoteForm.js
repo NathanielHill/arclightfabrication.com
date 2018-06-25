@@ -1,6 +1,7 @@
 /* global alert */
-import { Button, Center, Input, P, TextArea } from './../lib/components'
 import styled from 'styled-components'
+import React from 'react'
+import { Button, Center, Input, P, TextArea } from './../lib/components'
 
 const Form = styled.form`
   display: flex;

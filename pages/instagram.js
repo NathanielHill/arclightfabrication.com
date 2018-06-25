@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { EmailInstagram, Footer, LandingLayout, Link, Logo } from './../lib/components'
-import { landingWrapper } from './../lib/pageWrapper'
+import { EmailInstagram, Footer, LandingLayout, Link, Logo } from './../src/lib/components'
+import { landingWrapper } from './../src/lib/pageWrapper'
 
 export default landingWrapper((props) => (
   <LandingLayout>

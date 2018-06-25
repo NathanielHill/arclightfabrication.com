@@ -1,6 +1,7 @@
+import styled, { keyframes } from 'styled-components'
 import Router from 'next/router'
 import ReCAPTCHA from 'react-google-recaptcha'
-import styled, { keyframes } from 'styled-components'
+import React from 'react'
 import { Center, Container, Modal, QuoteForm } from './../lib/components'
 
 const drawFlap = keyframes`

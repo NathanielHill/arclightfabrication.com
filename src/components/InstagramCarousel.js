@@ -1,8 +1,9 @@
-import fetch from 'isomorphic-unfetch'
-import Slider from 'react-slick'
 import styled from 'styled-components'
+import Slider from 'react-slick'
+import React from 'react'
+import fetch from 'isomorphic-unfetch'
 
-const StyledSlider = styled(Slider)`  
+const StyledSlider = styled(Slider)`
 `
 const SliderImage = styled.img`
   height: 25rem;

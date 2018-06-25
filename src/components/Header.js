@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-import { EmailInstagram, Link } from './../lib/components'
-import Logo from './Logo' // Avoid some kind of circular import problem :(
+import { EmailInstagram, Link, DesktopLogo } from './../lib/components'
 
 const Wrapper = styled.header`
   align-items: center;
@@ -54,16 +53,16 @@ const DesktopIcons = styled.div`
   align-items: center;
   display: flex;
   margin: 0 .8rem;
-  
+
   @media (max-width: 768px) {
     display: none;
   }
 `
-const DesktopLogo = Logo.extend`
-  @media (max-width: 768px) {
-    display: none;
-  }
-`
+// const DesktopLogo = styled(Logo)`
+//   @media (max-width: 768px) {
+//     display: none;
+//   }
+// `
 // Warning: Prop `className` did not match. Server: "Logo-ag5qh9-0 fLXRag" Client: "Logo___default-ag5qh9-0 dIWTSO"
 // My media queries are applying to both Logo instances :/
 

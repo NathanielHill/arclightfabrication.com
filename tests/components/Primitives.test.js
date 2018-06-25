@@ -1,6 +1,6 @@
 /* global test, expect */
-
-import { Link } from './../../components/Primitives'
+import './../mocks/matchMedia.mock'
+import { Link } from './../../src/lib/components'
 import React from 'react'
 import renderer from 'react-test-renderer'
 

@@ -6,7 +6,10 @@
     ".gitignore": true,
     "yarn.lock": true,
     "out": true,
-    ".vscode": true
+    "coverage": true,
+    ".vscode": true,
+    ".env": true,
+    ".travis.yml": true
   },
   "javascript.validate.enable": false,
   "standard.enable": true,

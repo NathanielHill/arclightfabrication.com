@@ -1,7 +1,7 @@
 import gql from 'graphql-tag'
 import styled from 'styled-components'
-import { Container, H1, H2, Headshot, Layout, Logo, P } from './../lib/components'
-import pageWrapper from './../lib/pageWrapper'
+import { Container, H1, H2, Headshot, Layout, Logo, P } from './../src/lib/components'
+import pageWrapper from './../src/lib/pageWrapper'
 
 export default pageWrapper(gql`
   query allOwners {

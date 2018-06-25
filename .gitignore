@@ -2,7 +2,7 @@ node_modules
 .next
 *.log
 out/
-ignore/
+.env
 
 # coverage
 .nyc_output
