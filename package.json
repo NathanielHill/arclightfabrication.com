@@ -85,6 +85,6 @@
     "serve": "^9.1.0",
     "sloc": "^0.2.0",
     "standard": "^11.0.1",
-    "webpack-bundle-analyzer": "^2.13.1"
+    "webpack-bundle-analyzer": "^3.0.0"
   }
 }
