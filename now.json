@@ -1,6 +1,6 @@
 {
   "name": "arclightfabrication",
-  "alias": "staging.arclightfabrication.com",
+  "alias": "www.arclightfabrication.com",
   "type": "static",
   "static": {
     "trailingSlash": false
