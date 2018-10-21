@@ -1,7 +1,7 @@
 {
   "name": "arclightfabrication.com",
   "version": "1.0.0",
-  "description": "ArclightFabrication.com Website",
+  "description": "arclightfabrication.com website",
   "private": true,
   "repository": "https://github.com/NathanielHill/ArclightFabrication",
   "scripts": {
