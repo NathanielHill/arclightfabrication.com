@@ -1,6 +1,7 @@
 {
   "name": "arclightfabrication",
   "alias": "www.arclightfabrication.com",
+  "version": 1,
   "type": "static",
   "static": {
     "trailingSlash": false
