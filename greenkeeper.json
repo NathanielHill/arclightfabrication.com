@@ -4,6 +4,9 @@
       "packages": [
         "package.json",
         "www/package.json"
+      ],
+      "ignore": [
+        "styled-components"
       ]
     }
   }
