@@ -1,14 +1,36 @@
 {
   "name": "arclightfabrication",
   "alias": "www.arclightfabrication.com",
-  "version": 1,
-  "type": "static",
-  "static": {
-    "trailingSlash": false
-  },
+  "version": 2,
+  "regions": [
+    "all"
+  ],
+  "builds": [
+    {
+      "src": "static/*",
+      "use": "@now/static"
+    },
+    {
+      "src": "www/package.json",
+      "use": "@now/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "^/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "^/(.*)",
+      "dest": "/www/$1"
+    }
+  ],
   "build": {
     "env": {
-      "COVERALLS_REPO_TOKEN": "@coveralls_repo_token",
+      "ANALYTICS_TOKEN": "@arclightfabrication_analytics_token",
+      "INSTAGRAM_TOKEN": "@arclightfabrication_instagram_token",
+      "RECAPTCHA_TOKEN": "@arclightfabrication_recaptcha_token",
+      "COVERALLS_REPO_TOKEN": "@arclightfabrication_coveralls_repo_token",
       "COVERALLS_SERVICE_NAME": "ZEIT Now"
     }
   }
