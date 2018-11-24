@@ -1,9 +1,17 @@
-node_modules
-.next
-*.log
-out/
-.env
+# See https://help.github.com/ignore-files/ for more about ignoring files.
 
-# coverage
-.nyc_output
+# dependencies
+node_modules
+
+# testing
 coverage
+
+# yarn
+*.log
+
+# Next.js build and export
+.next/
+out/
+
+# VS Code
+.vscode
