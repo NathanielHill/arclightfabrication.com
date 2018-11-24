@@ -11,9 +11,9 @@ RUN yarn install --ignore-optional
 COPY . .
 
 # Run tests, and submit coverage
-ARG COVERALLS_REPO_TOKEN
-ARG COVERALLS_SERVICE_NAME
-RUN yarn coveralls
+#ARG COVERALLS_REPO_TOKEN
+#ARG COVERALLS_SERVICE_NAME
+#RUN yarn coveralls
 
 # Build and export the app
 RUN yarn build && yarn export -o /public
