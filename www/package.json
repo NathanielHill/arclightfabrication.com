@@ -60,7 +60,7 @@
     "react-modal": "^3.4.5",
     "react-slick": "^0.23.2",
     "react-tabs": "^2.2.2",
-    "styled-components": "^3.4.10",
+    "styled-components": "^4.1.1",
     "theming": "^2.2.0"
   },
   "devDependencies": {
