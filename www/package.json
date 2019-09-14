@@ -56,7 +56,7 @@
     "react-apollo": "^2.2.4",
     "react-dom": "^16.4.0",
     "react-flip-move": "^3.0.3",
-    "react-google-recaptcha": "^1.0.4",
+    "react-google-recaptcha": "^2.0.1",
     "react-modal": "^3.4.5",
     "react-slick": "^0.23.2",
     "react-tabs": "^2.2.2",
