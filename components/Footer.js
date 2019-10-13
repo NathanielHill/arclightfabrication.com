@@ -1,11 +1,12 @@
-import styled from 'styled-components'
-import { EmailInstagram } from 'lib/components'
+import React from 'react';
+import styled from 'styled-components';
+import { EmailInstagram } from 'lib/components';
 
-const Copyright = styled(({ ...rest }) => (<span {...rest}>&#9400;</span>))`
+const Copyright = styled(({ ...rest }) => <span {...rest}>&#9400;</span>)`
   & {
     font-size: 0.8em;
   }
-`
+`;
 export default styled(({ splash, ...rest }) => (
   <footer {...rest}>
     {splash ? undefined : <EmailInstagram size={3} />}
@@ -26,7 +27,7 @@ export default styled(({ splash, ...rest }) => (
       margin-bottom: 1em;
       margin-top: 0em;
     }
-    @media(min-width: 768px) {
+    @media (min-width: 768px) {
       margin: auto auto 0 ${props => props.theme.halfSpacing};
       > ${EmailInstagram} {
         display: none;
@@ -35,4 +36,4 @@ export default styled(({ splash, ...rest }) => (
       }
     }
   }
-`
+`;

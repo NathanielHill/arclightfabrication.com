@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const Headshot = () => (
   <>
     <img src='/chris.jpg' />

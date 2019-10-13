@@ -1,4 +1,4 @@
-import { transparentize, darken } from 'polished'
+import { transparentize, darken } from 'polished';
 
 const colors = {
   brandPrimary: 'rgb(255, 87, 34)',
@@ -17,16 +17,16 @@ const colors = {
   brandOrange: '#f76d06',
   brandRed: '#b40000',
   brandLightGrey: '#8c9cb1',
-  brandDarkGrey: '#2f4f4f'
-}
+  brandDarkGrey: '#2f4f4f',
+};
 
 // const spacing = {
 
 // }
 
 const breakpoints = {
-  tablet: '768px'
-}
+  tablet: '768px',
+};
 
 const theme = {
   // Colors
@@ -74,7 +74,7 @@ const theme = {
 
   // Footer
   footerBackground: colors.transparent,
-  footerColor: colors.grey
-}
+  footerColor: colors.grey,
+};
 
-export default theme
+export default theme;

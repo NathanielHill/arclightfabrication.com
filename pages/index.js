@@ -1,7 +1,8 @@
 // import Footer from 'components/Footer';
-import { Logo } from 'components/Logo';
 import { Headshot } from 'components/Headshot';
+import { Logo } from 'components/Logo';
 import Head from 'next/head';
+import React from 'react';
 
 export default () => (
   <div>
