@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Headshot = () => (
   <>
-    <img src='/chris.jpg' />
+    <img src='/chris.jpg' alt='Chris Volloy Headshot' />
     <style jsx>{`
       img {
         height: 16rem;
