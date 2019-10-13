@@ -1,6 +1,6 @@
 // import Footer from 'components/Footer';
 import { Headshot } from 'components/Headshot';
-import { Logo } from 'components/Logo';
+import { Footer } from 'components/Footer';
 import Head from 'next/head';
 import React from 'react';
 
@@ -14,10 +14,9 @@ export default () => (
       <link rel='manifest' href='/manifest.json' />
       <title>Arclight Fabrication</title>
     </Head>
-    <span>We make things.</span>
     <Headshot />
-    <Logo size={16} circle />
-    <footer />
+    <span>We make things.</span>
+    <Footer />
     <style jsx global>{`
       * {
         margin: 0;
@@ -48,19 +47,13 @@ export default () => (
       }
       html,
       body {
+        background: linear-gradient(#e66465, #9198e5);
         font-family: Changa, Helvetica, Arial, sans-serif;
         font-size: 16px;
         font-size: 3vmin;
         height: 100vh;
         min-height: 100vh;
-        overflow-x: hidden;
-        overscroll-behavior: contain;
         width: 100vw;
-      }
-      body {
-        background-color: grey;
-        background-size: cover;
-        background: url('/background.jpg') no-repeat center center fixed;
       }
     `}</style>
     <style jsx>{`
@@ -68,43 +61,21 @@ export default () => (
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         flex: 1 0 auto;
         height: 100vh;
+      }
+      span {
+        background: transparent;
+        color: black;
+        font-weight: 800;
+        font-size: 3.2rem;
+      }
+      @media (min-width: 768px) {
+        span {
+          font-size: 4rem;
+        }
       }
     `}</style>
   </div>
 );
-
-// const SplashWrapper = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: space-around;
-//   flex: 1 0 auto;
-//   height: 100vh;
-//   @media (min-width: ${props => props.theme.breakpoints.tablet}) {
-//     > ${Logo} {
-//       height: 32rem;
-//     }
-//   }
-// `;
-// const Tagline = styled.a`
-//   background: transparent;
-//   color: ${props => props.theme.brandPrimary};
-//   cursor: pointer;
-//   font-weight: 800;
-//   font-size: 3.2rem;
-//   line-height: 1.2;
-//   margin: 0 auto;
-//   margin-top: auto;
-//   outline: none;
-//   padding: ${props => props.theme.defaultSpacing};
-//   text-align: center;
-//   text-decoration: none;
-//   transition: font-size 1s ease;
-//   @media (min-width: ${props => props.theme.breakpoints.tablet}) {
-//     font-size: 7.2rem;
-//     transition: font-size 1s ease;
-//   }
-// `;

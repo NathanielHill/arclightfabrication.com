@@ -71,7 +71,6 @@ export const Logo = () => (
           xlinkHref='#c'
         />
       </defs>
-      <circle r='88.035' cx='88.034' cy='88.035' fill='lightgrey' />
       <a title='Arclight Fabrication'>
         <g fillRule='evenodd'>
           <path
@@ -97,7 +96,8 @@ export const Logo = () => (
     </svg>
     <style jsx>{`
       svg {
-        height: 16rem;
+        height: 3rem;
+        top: 1rem;
         transition: height 1s ease, width 1s ease;
       }
     `}</style>

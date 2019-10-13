@@ -1,39 +1,42 @@
+import { Logo } from 'components/Logo';
 import React from 'react';
-import styled from 'styled-components';
-import { EmailInstagram } from 'lib/components';
 
-const Copyright = styled(({ ...rest }) => <span {...rest}>&#9400;</span>)`
-  & {
-    font-size: 0.8em;
-  }
-`;
-export default styled(({ splash, ...rest }) => (
-  <footer {...rest}>
-    {splash ? undefined : <EmailInstagram size={3} />}
-    <Copyright /> 2018 Arclight Fabrication
-  </footer>
-))`
-  & {
-    background: ${props => props.theme.footerBackground};
-    color: ${props => props.theme.footerColor};
-    font-size: ${props => props.theme.footerFontSize};
-    margin: 0 auto;
-    margin-top: auto;
-    outling: none;
-    text-decoration: none;
-    > ${EmailInstagram} {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 1em;
-      margin-top: 0em;
-    }
-    @media (min-width: 768px) {
-      margin: auto auto 0 ${props => props.theme.halfSpacing};
-      > ${EmailInstagram} {
-        display: none;
-        margin: 0;
-        padding: 0;
+const Copyright = () => (
+  <span>
+    &#9400;
+    <style jsx>{`
+      span {
+        position: relative;
+        bottom: 0.1rem;
+        margin-right: 0.2rem;
       }
-    }
-  }
-`;
+    `}</style>
+  </span>
+);
+
+export const Footer = () => (
+  <footer>
+    <Copyright /> 2019 <Logo /> Arclight Fabrication
+    <style jsx>{`
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        margin: auto 0;
+
+        color: grey;
+        font-size: 2rem;
+        bottom: 0;
+        position: fixed;
+        outline: none;
+        text-decoration: none;
+      }
+      @media (min-width: 768px) {
+        footer {
+          font-size: 1rem;
+        }
+      }
+    `}</style>
+  </footer>
+);
