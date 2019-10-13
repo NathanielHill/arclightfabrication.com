@@ -6,12 +6,26 @@ node_modules
 # testing
 coverage
 
+# build output
+dist
+
+# misc
+.DS_Store
+
+# Environment Variables
+.env*
+
+# npm
+npm-debug.log*
+
 # yarn
-*.log
+yarn-debug.log*
+yarn-error.log*
+
 
 # Next.js build and export
 .next/
 out/
 
-# VS Code
-.vscode
+# Editor settings
+.vscode/

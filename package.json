@@ -1,9 +1,13 @@
 {
   "name": "arclightfabrication",
-  "private": true,
+  "version": "1.0.0",
+  "description": "www.arclightfabrication.com website",
+  "author": "Nathaniel Hill <nata@goguna.com>",
   "license": "UNLICENSED",
+  "keywords": [],
   "scripts": {
-    "test-www": "cd www/ && yarn test --bail --findRelatedTests"
+    "start": "next",
+    "build": "next build"
   },
   "husky": {
     "hooks": {
@@ -11,22 +15,28 @@
     }
   },
   "lint-staged": {
-    "linters": {
-      "**/*.js": [ "standard" ],
-      "www/**/*.js": [ "standard", "yarn test-www" ]
-    },
-    "ignore": ["**/node_modules/**"]
+    "**/*.js": [
+      "prettier --write",
+      "healthier"
+    ]
   },
-  "standard": {
-    "parser": "babel-eslint",
-    "globals": [ "React" ],
-    "ignore": [ "**/node_modules/**" ]
+  "prettier": {
+    "jsxSingleQuote": true,
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "dependencies": {
+    "next": "9.1.1",
+    "next-offline": "4.0.6",
+    "react": "16.10.2",
+    "react-dom": "16.10.2"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.9.0",
-    "husky": "^1.2.0",
-    "lint-staged": "^8.1.0",
-    "standard": "^12.0.1"
+    "healthier": "3.2.0",
+    "husky": "3.0.9",
+    "lint-staged": "9.4.2",
+    "prettier": "1.18.2"
   }
 }

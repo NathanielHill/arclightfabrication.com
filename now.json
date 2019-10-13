@@ -1,37 +1,23 @@
 {
   "name": "arclightfabrication",
   "alias": "www.arclightfabrication.com",
+  "scope": "nata",
   "version": 2,
-  "regions": [
-    "all"
+  "regions": ["all"],
+  "routes": [
+    {
+      "src": "^/service-worker.js$",
+      "dest": "/_next/static/service-worker.js",
+      "headers": {
+        "cache-control": "public, max-age=43200, immutable",
+        "Service-Worker-Allowed": "/"
+      }
+    }
   ],
   "builds": [
     {
-      "src": "static/*",
-      "use": "@now/static"
-    },
-    {
-      "src": "www/package.json",
-      "use": "@now/static-build"
+      "src": "next.config.js",
+      "use": "@now/next"
     }
-  ],
-  "routes": [
-    {
-      "src": "^/static/(.*)",
-      "dest": "/static/$1"
-    },
-    {
-      "src": "^/(.*)",
-      "dest": "/www/$1"
-    }
-  ],
-  "build": {
-    "env": {
-      "ANALYTICS_TOKEN": "@arclightfabrication_analytics_token",
-      "INSTAGRAM_TOKEN": "@arclightfabrication_instagram_token",
-      "RECAPTCHA_TOKEN": "@arclightfabrication_recaptcha_token",
-      "COVERALLS_REPO_TOKEN": "@arclightfabrication_coveralls_repo_token",
-      "COVERALLS_SERVICE_NAME": "ZEIT Now"
-    }
-  }
+  ]
 }
