@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "healthier": "3.2.0",
-    "husky": "3.0.9",
+    "husky": "3.1.0",
     "lint-staged": "9.4.2",
     "prettier": "1.18.2"
   }
