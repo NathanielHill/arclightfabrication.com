@@ -1,7 +1,6 @@
 {
   "name": "arclightfabrication",
   "alias": "www.arclightfabrication.com",
-  "scope": "nata",
   "version": 2,
   "regions": ["all"],
   "routes": [
