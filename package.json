@@ -1,7 +1,7 @@
 {
   "name": "arclightfabrication",
   "version": "1.0.0",
-  "description": "www.arclightfabrication.com website",
+  "description": "arclightfabrication.com website",
   "author": "Nathaniel Hill <nata@goguna.com>",
   "license": "UNLICENSED",
   "keywords": [],
@@ -21,10 +21,7 @@
     ]
   },
   "prettier": {
-    "jsxSingleQuote": true,
     "printWidth": 120,
-    "semi": true,
-    "singleQuote": true,
     "trailingComma": "es5"
   },
   "dependencies": {

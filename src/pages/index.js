@@ -1,17 +1,17 @@
 // import Footer from 'components/Footer';
-import { Headshot } from 'components/Headshot';
-import { Footer } from 'components/Footer';
-import Head from 'next/head';
-import React from 'react';
+import { Headshot } from "components/Headshot";
+import { Footer } from "components/Footer";
+import Head from "next/head";
+import React from "react";
 
 export default () => (
   <div>
     <Head>
-      <meta charSet='utf-8' />
-      <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-      <meta name='description' content='Arclight Fabrication' />
-      <meta name='theme-color' content='#4D77B3' />
-      <link rel='manifest' href='/manifest.json' />
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Arclight Fabrication" />
+      <meta name="theme-color" content="#4D77B3" />
+      <link rel="manifest" href="/manifest.json" />
       <title>Arclight Fabrication</title>
     </Head>
     <Headshot />
@@ -31,19 +31,19 @@ export default () => (
         box-sizing: inherit;
       }
       @font-face {
-        font-family: 'Changa';
+        font-family: "Changa";
         font-style: normal;
         font-weight: 400;
-        src: local('Changa'), local('Changa-Regular'), url('/fonts/changa-v4-latin-800.woff') format('woff'),
-          url('/fonts/changa-v4-latin-800.woff2') format('woff2');
+        src: local("Changa"), local("Changa-Regular"), url("/fonts/changa-v4-latin-800.woff") format("woff"),
+          url("/fonts/changa-v4-latin-800.woff2") format("woff2");
       }
       @font-face {
-        font-family: 'Changa';
+        font-family: "Changa";
         font-style: normal;
         font-weight: 800;
-        src: local('Changa ExtraBold'), local('Changa-ExtraBold'),
-          url('/fonts/changa-v4-latin-regular.woff') format('woff'),
-          url('/fonts/changa-v4-latin-regular.woff2') format('woff');
+        src: local("Changa ExtraBold"), local("Changa-ExtraBold"),
+          url("/fonts/changa-v4-latin-regular.woff") format("woff"),
+          url("/fonts/changa-v4-latin-regular.woff2") format("woff");
       }
       html,
       body {
