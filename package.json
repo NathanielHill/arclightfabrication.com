@@ -33,7 +33,7 @@
   "devDependencies": {
     "healthier": "3.2.0",
     "husky": "4.2.1",
-    "lint-staged": "10.0.3",
+    "lint-staged": "10.0.4",
     "prettier": "1.19.1"
   }
 }
