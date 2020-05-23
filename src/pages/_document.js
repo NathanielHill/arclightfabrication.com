@@ -1,5 +1,5 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
-import React from "react";
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import React from 'react';
 
 // This custom <Document /> is only to set lang="en" on the <html> tag!
 
@@ -11,7 +11,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang='en'>
         <Head />
         <body>
           <Main />
