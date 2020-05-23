@@ -11,4 +11,5 @@ public/*
 
 !next.config.js
 !package.json
+!.snyk
 !yarn.lock
