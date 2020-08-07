@@ -11,6 +11,7 @@ export default () => (
       <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       <meta name='description' content='Arclight Fabrication' />
       <meta name='theme-color' content='#4D77B3' />
+      <meta name='google-site-verification' content='c7TCrdnHKhLvJeMOFrw5UGQoxn4jsaZ0T8O6XD0tQxs' />
       <link rel='manifest' href='/manifest.json' />
       <title>Arclight Fabrication</title>
     </Head>
