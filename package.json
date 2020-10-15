@@ -33,8 +33,8 @@
   "dependencies": {
     "next": "9.4.2",
     "next-offline": "5.0.2",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
     "snyk": "^1.324.0"
   },
   "devDependencies": {
